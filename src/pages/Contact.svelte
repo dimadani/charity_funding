@@ -69,13 +69,13 @@
               <h4>Drop us a line</h4>
               <form action="#" method="POST" id="xs-contact-form" class="xs-contact-form contact-form-v2">
                 <div class="input-group">
-                  <input type="text" name="name" id="xs-name" class="form-control" placeholder="Enter Your Name.....">
+                  <input type="text" name="name" id="xs-name" class="form-control" placeholder="Enter Your Name...">
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fa fa-user"></i></div>
                   </div>
                 </div><!-- .input-group END -->
                 <div class="input-group">
-                  <input type="email" name="email" id="xs-email" class="form-control" placeholder="Enter Your Email.....">
+                  <input type="email" name="email" id="xs-email" class="form-control" placeholder="Enter Your Email...">
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fa fa-envelope-o"></i></div>
                   </div>

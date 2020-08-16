@@ -6,10 +6,10 @@
     import Footer from '../components/Footer.svelte';
     import { charities } from '../data/charities.js';
     // let charities = [];
-    let title = "Charity";
-    setTimeout(() => {
-        title = "Donation";
-    }, 2000);
+    // let title = "Charity";
+    // setTimeout(() => {
+    //     title = "Donation";
+    // }, 2000);
 
 </script>
 

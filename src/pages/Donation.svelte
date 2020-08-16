@@ -25,7 +25,7 @@
   }
   label[for="xs-donate-agree"] {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 11px;
   }
 </style>
 
