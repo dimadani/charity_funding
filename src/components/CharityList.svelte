@@ -1,5 +1,6 @@
 <script>
     import Modal from './Modal.svelte';
+
     export let charities;
     let isOpenModal = false; 
 
@@ -132,10 +133,10 @@
 
                 <span class="xs-separetor"></span>
 
-                <button on:click={openModal} data-toggle="modal" data-target="#exampleModal"
+                <a href="/donation/{charity.id}" data-toggle="modal" data-target="#exampleModal"
                     class="btn btn-primary btn-block">
                     Donate This Cause
-                </button>
+                </a>
                 </div><!-- .xs-item-content END -->
             </div><!-- .xs-popular-item END -->
             </div>

@@ -16,7 +16,7 @@ module.exports = {
             id : 2,
             title : 'Second Charity Project',
             category : 'Water',
-            thumbnail : 'https://live.staticflickr.com/6016/5958041789_ded08d42d5_z.jpg',
+            thumbnail : 'https://images.unsplash.com/photo-1444664361762-afba083a4d77?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w',
             pledged : 9000,
             target : 10000,
             date_end : +new Date('17 August 2020'),
