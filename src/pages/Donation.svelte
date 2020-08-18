@@ -2,7 +2,20 @@
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
   import { charities } from '../data/charities.js';
+  import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
 
+  onMount(() => {
+    console.log('on mounting');
+  })
+  beforeUpdate(() => {
+    console.log('dieksekusi sebelum dom berhasil di update');
+  })
+  afterUpdate(() => {
+    console.log('dieksekusi setelah dom berhasil di update');
+  })
+  onDestroy(() =>{
+    console.log('dieksekusi setelah component ini dihancurkan');
+  })
   export let params; 
   let data;
   
@@ -33,7 +46,7 @@
 <!-- welcome section -->
 <!--breadcumb start here-->
 <section class="xs-banner-inner-section parallax-window"
-  style="background-image:url('https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80 1950w')">
+  style="background-image:url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80 3000whttps://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80 1950w')">
   <div class="xs-black-overlay"></div>
   <div class="container">
     <div class="color-white xs-inner-banner-content">
