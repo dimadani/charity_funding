@@ -7,8 +7,7 @@
     import NotFound from './pages/NotFound.svelte';
 
     let page, params;
-    
-    router('/*', () => (page = NotFound));
+
     router('/', () => (page = Home));
     router('/about', () => (page = About));
     router('/contact', () => (page = Contact));
@@ -16,6 +15,7 @@
         params = ctx.params;
         next();
     } ,() => (page = Donation));
+    router('/*', () => (page = NotFound));
     
     router.start();
 </script>
