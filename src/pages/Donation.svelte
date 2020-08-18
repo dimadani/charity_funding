@@ -21,23 +21,23 @@
     },1000);
   })
 
-  // beforeUpdate(() => {
-  //   console.log('dieksekusi sebelum dom berhasil di update');
-  // })
+  beforeUpdate(() => {
+    console.log('dieksekusi sebelum dom berhasil di update');
+  })
 
-  // afterUpdate(() => {
-  //   console.log('dieksekusi setelah dom berhasil di update');
-  // })
+  afterUpdate(() => {
+    console.log('dieksekusi setelah dom berhasil di update');
+  })
 
-  // let interval = setInterval(() => {
-  //   second += 1,
-  //   console.log(second);
-  // },1000);
+  let interval = setInterval(() => {
+    second += 1,
+    console.log(second);
+  },1000);
   
-  // onDestroy(() =>{
-  //   clearInterval(interval)
-  //   console.log('dieksekusi setelah component ini dihancurkan');
-  // });
+  onDestroy(() =>{
+    clearInterval(interval)
+    console.log('dieksekusi setelah component ini dihancurkan');
+  });
 </script>
 
 <style>
