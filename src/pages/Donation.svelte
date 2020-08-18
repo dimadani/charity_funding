@@ -1,21 +1,9 @@
 <script>
+  import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
   import { charities } from '../data/charities.js';
-  import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
 
-  onMount(() => {
-    console.log('on mounting');
-  })
-  beforeUpdate(() => {
-    console.log('dieksekusi sebelum dom berhasil di update');
-  })
-  afterUpdate(() => {
-    console.log('dieksekusi setelah dom berhasil di update');
-  })
-  onDestroy(() =>{
-    console.log('dieksekusi setelah component ini dihancurkan');
-  })
   export let params; 
   let data;
   
@@ -23,9 +11,32 @@
     return charities.find(function (charity) {
       return charity.id === parseInt(id);
     })
-  }
+  };
   
-  data = getCharity(params.id);
+  // data = getCharity(params.id);
+  
+  onMount(function() {
+    data = getCharity(params.id);
+    console.log(params.id);
+  })
+
+  // beforeUpdate(() => {
+  //   console.log('dieksekusi sebelum dom berhasil di update');
+  // })
+
+  // afterUpdate(() => {
+  //   console.log('dieksekusi setelah dom berhasil di update');
+  // })
+
+  // let interval = setInterval(() => {
+  //   second += 1,
+  //   console.log(second);
+  // },1000);
+  
+  // onDestroy(() =>{
+  //   clearInterval(interval)
+  //   console.log('dieksekusi setelah component ini dihancurkan');
+  // });
 </script>
 
 <style>

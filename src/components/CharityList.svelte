@@ -1,4 +1,5 @@
 <script>
+    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
     import Modal from './Modal.svelte';
     
     export let charities;
