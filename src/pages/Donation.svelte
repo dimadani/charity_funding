@@ -17,7 +17,6 @@
   
   onMount(function() {
     data = getCharity(params.id);
-    console.log(params.id);
   })
 
   // beforeUpdate(() => {
@@ -56,6 +55,7 @@
 <Header />
 <!-- welcome section -->
 <!--breadcumb start here-->
+{#if data}
 <section class="xs-banner-inner-section parallax-window"
   style="background-image:url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3000&q=80 3000whttps://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80 1950w')">
   <div class="xs-black-overlay"></div>
@@ -73,7 +73,6 @@
 </section>
 <!--breadcumb end here-->
 <!-- End welcome section -->
-{#if data}
 <main class="xs-main">
   <!-- donation form section -->
   <section class="xs-section-padding bg-gray">
