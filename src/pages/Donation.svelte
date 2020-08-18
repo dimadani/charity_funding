@@ -16,7 +16,9 @@
   // data = getCharity(params.id);
   
   onMount(function() {
-    data = getCharity(params.id);
+    setTimeout(() => {
+      data = getCharity(params.id);
+    },1000);
   })
 
   // beforeUpdate(() => {
