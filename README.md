@@ -1,3 +1,1 @@
-#svelte Me
-
-ini mentor favorit saya di buildwithangga 
+https://afrika-charity.netlify.app/
